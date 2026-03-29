@@ -1,0 +1,31 @@
+{
+  "name": "CompletedWorkout",
+  "type": "object",
+  "properties": {
+    "plan_id": {
+      "type": "string",
+      "description": "ID da ficha de treino"
+    },
+    "plan_name": {
+      "type": "string",
+      "description": "Nome do treino"
+    },
+    "workout_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Data do treino"
+    },
+    "general_notes": {
+      "type": "string",
+      "description": "Observa\u00e7\u00f5es gerais do treino"
+    },
+    "total_exercises": {
+      "type": "number",
+      "description": "Total de exerc\u00edcios realizados"
+    }
+  },
+  "required": [
+    "plan_id",
+    "workout_date"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "ExerciseSubstitution",
+  "type": "object",
+  "properties": {
+    "main_exercise_id": {
+      "type": "string",
+      "description": "ID do exerc\u00edcio principal"
+    },
+    "main_exercise_name": {
+      "type": "string",
+      "description": "Nome do exerc\u00edcio principal"
+    },
+    "substitute_exercise_id": {
+      "type": "string",
+      "description": "ID do exerc\u00edcio substituto"
+    },
+    "substitute_exercise_name": {
+      "type": "string",
+      "description": "Nome do exerc\u00edcio substituto"
+    },
+    "substitution_type": {
+      "type": "string",
+      "enum": [
+        "equivalente",
+        "variacao",
+        "adaptacao",
+        "progressao",
+        "regressao"
+      ],
+      "description": "Tipo de substitui\u00e7\u00e3o"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observa\u00e7\u00e3o sobre a substitui\u00e7\u00e3o"
+    }
+  },
+  "required": [
+    "main_exercise_id",
+    "substitute_exercise_id"
+  ]
+}

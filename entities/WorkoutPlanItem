@@ -1,0 +1,43 @@
+{
+  "name": "WorkoutPlanItem",
+  "type": "object",
+  "properties": {
+    "plan_id": {
+      "type": "string",
+      "description": "ID da ficha de treino"
+    },
+    "order": {
+      "type": "number",
+      "description": "Ordem do exerc\u00edcio na ficha"
+    },
+    "exercise_id": {
+      "type": "string",
+      "description": "ID do exerc\u00edcio principal"
+    },
+    "exercise_name": {
+      "type": "string",
+      "description": "Nome do exerc\u00edcio principal"
+    },
+    "planned_sets": {
+      "type": "number",
+      "description": "S\u00e9ries planejadas"
+    },
+    "planned_reps": {
+      "type": "number",
+      "description": "Repeti\u00e7\u00f5es planejadas"
+    },
+    "planned_rest": {
+      "type": "number",
+      "description": "Descanso planejado em segundos"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observa\u00e7\u00f5es"
+    }
+  },
+  "required": [
+    "plan_id",
+    "exercise_id",
+    "order"
+  ]
+}

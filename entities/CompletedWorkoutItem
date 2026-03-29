@@ -1,0 +1,71 @@
+{
+  "name": "CompletedWorkoutItem",
+  "type": "object",
+  "properties": {
+    "completed_workout_id": {
+      "type": "string",
+      "description": "ID do treino realizado"
+    },
+    "workout_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Data do treino"
+    },
+    "order": {
+      "type": "number",
+      "description": "Ordem do exerc\u00edcio"
+    },
+    "planned_exercise_id": {
+      "type": "string",
+      "description": "ID do exerc\u00edcio planejado"
+    },
+    "planned_exercise_name": {
+      "type": "string",
+      "description": "Nome do exerc\u00edcio planejado"
+    },
+    "executed_exercise_id": {
+      "type": "string",
+      "description": "ID do exerc\u00edcio executado"
+    },
+    "executed_exercise_name": {
+      "type": "string",
+      "description": "Nome do exerc\u00edcio executado"
+    },
+    "execution_type": {
+      "type": "string",
+      "enum": [
+        "principal",
+        "substituto"
+      ],
+      "description": "Se foi principal ou substituto"
+    },
+    "sets": {
+      "type": "number",
+      "description": "S\u00e9ries realizadas"
+    },
+    "reps": {
+      "type": "number",
+      "description": "Repeti\u00e7\u00f5es realizadas"
+    },
+    "previous_load": {
+      "type": "number",
+      "description": "Carga anterior"
+    },
+    "load_used": {
+      "type": "number",
+      "description": "Carga utilizada"
+    },
+    "rest": {
+      "type": "number",
+      "description": "Descanso em segundos"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observa\u00e7\u00f5es"
+    }
+  },
+  "required": [
+    "completed_workout_id",
+    "executed_exercise_id"
+  ]
+}

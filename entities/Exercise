@@ -1,0 +1,76 @@
+{
+  "name": "Exercise",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome do exerc\u00edcio"
+    },
+    "muscle_group": {
+      "type": "string",
+      "enum": [
+        "peito",
+        "costas",
+        "ombros",
+        "biceps",
+        "triceps",
+        "antebraco",
+        "abdomen",
+        "quadriceps",
+        "posterior",
+        "gluteos",
+        "panturrilha",
+        "trapezio",
+        "lombar",
+        "corpo_todo"
+      ],
+      "description": "Grupo muscular principal"
+    },
+    "exercise_type": {
+      "type": "string",
+      "enum": [
+        "composto",
+        "isolado",
+        "cardio",
+        "funcional"
+      ],
+      "description": "Tipo de exerc\u00edcio"
+    },
+    "equipment": {
+      "type": "string",
+      "description": "Equipamento utilizado"
+    },
+    "default_sets": {
+      "type": "number",
+      "description": "S\u00e9ries padr\u00e3o"
+    },
+    "default_reps": {
+      "type": "number",
+      "description": "Repeti\u00e7\u00f5es padr\u00e3o"
+    },
+    "default_rest": {
+      "type": "number",
+      "description": "Descanso padr\u00e3o em segundos"
+    },
+    "base_weight": {
+      "type": "number",
+      "description": "Peso base em kg"
+    },
+    "last_load": {
+      "type": "number",
+      "description": "\u00daltima carga utilizada em kg"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Observa\u00e7\u00f5es t\u00e9cnicas"
+    },
+    "active": {
+      "type": "boolean",
+      "description": "Se o exerc\u00edcio est\u00e1 ativo"
+    }
+  },
+  "required": [
+    "name",
+    "muscle_group"
+  ]
+}
